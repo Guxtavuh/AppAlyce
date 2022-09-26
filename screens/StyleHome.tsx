@@ -5,19 +5,21 @@ export const styles = StyleSheet.create({
 
 tudo:{
     height:"100%",
-    backgroundColor: "#7a057a"
+    backgroundColor: "#d2c1dba"
 },
 
 viewtitulo:{
+display:"flex",
+justifyContent:"center",
+alignItems:"center",
 borderRadius:40,    
 marginTop:50, 
-backgroundColor: "#677d8e"
+
 
 },
-titulo:{
-    textAlign:"center",
-    fontSize:60,
-    color:"#7a057a",
+logoalyce:{
+width:140,
+height:98
 },
 
 viewtxt1:{
@@ -27,30 +29,36 @@ viewtxt1:{
 txt1:{
  fontSize:24,
  marginBottom:6,
- color:"#FFFFFF"
+ color:"black"
 },
 
 txt2:{
     marginTop:20,
-    color:"#FFFFFF",
-    fontSize:20
+    color:"#black",
+    fontSize:20,
+    marginBottom:10
 },
 btn1:{
-display:"flex",
-backgroundColor:"#FFFFFF",
+height:100,
 width:"100%",
-height:140,
-marginTop:15,
-borderRadius:15
-
+marginTop:10
 },
-txtbtn1:{
-    color:"#677d8e",
-    fontSize:25,
-    marginTop:50,
-    textAlign:"left",
-    marginLeft:15,
-}
 
+btnalyce:{
+    width:"100%",
+    height:90
+},
+
+btn11:{
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+    marginTop:10
+},
+
+btnalycee:{
+    borderRadius:7
+    
+}
 
 })

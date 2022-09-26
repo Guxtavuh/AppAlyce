@@ -1,4 +1,4 @@
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, Image } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { styles } from "./StyleHome";
 
@@ -8,7 +8,7 @@ export default function Home({navigation}){
             <ScrollView horizontal={false}>
                 {/* Header, topo, titulo */}
                 <View style={styles.viewtitulo}>
-                    <Text style={styles.titulo}>Alyce</Text>
+                    <Image style={styles.logoalyce} source={require("../screens/img/LogoAlyce.png")}></Image>
                 </View>
                 {/* subs titulos */}
                 <View style={styles.viewtxt1}>
@@ -21,32 +21,29 @@ export default function Home({navigation}){
                     </Text>
                 {/* Area de botoes */}
                 <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
-                <View style={styles.btn1}>
-                <Text style={styles.txtbtn1}>Prevenção</Text>
+                <View style={styles.btn11}>
+                <Image style={styles.btnalycee} source={require("../screens/img/btnPadraotestev3.png")}></Image>
                 </View> 
                 </TouchableOpacity>
                 
+                <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
+                <View style={styles.btn11}>
+                <Image style={styles.btnalycee} source={require("../screens/img/btnPrevencaov2.png")}></Image>
+                </View> 
+                </TouchableOpacity>
 
                 <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
-                <View style={styles.btn1}>
-                <Text style={styles.txtbtn1}>Prevenção</Text>
+                <View style={styles.btn11}>
+                <Image style={styles.btnalycee} source={require("../screens/img/btnPadraotestev3.png")}></Image>
                 </View> 
                 </TouchableOpacity>
+
 
                 <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
-                <View style={styles.btn1}>
-                <Text style={styles.txtbtn1}>Prevenção</Text>
+                <View style={styles.btn11}>
+                <Image style={styles.btnalycee} source={require("../screens/img/btnPadraotestev3.png")}></Image>
                 </View> 
                 </TouchableOpacity>
-
-
-                <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} > 
-                <View style={styles.btn1}>
-                <Text style={styles.txtbtn1}>Prevenção</Text>
-                </View> 
-                </TouchableOpacity>
- 
-
 
 
 

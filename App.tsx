@@ -10,7 +10,7 @@ import Prevencao from "./screens/Prevencao";
 
 
 
-//Criar o elemento que nos ajudarar a empilhar as telas
+//Const que irá ajudar a empilhar a tela
 
 const Stack = createNativeStackNavigator();
 

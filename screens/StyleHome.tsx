@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
 
 tudo:{
     height:"100%",
-    backgroundColor: "#d2c1dba"
+    backgroundColor: "#d2c1db"
 },
 
 viewtitulo:{
@@ -44,21 +44,16 @@ width:"100%",
 marginTop:10
 },
 
-btnalyce:{
-    width:"100%",
-    height:90
-},
-
 btn11:{
     display:"flex",
     justifyContent:"center",
     alignItems:"center",
-    marginTop:10
+    marginTop:10,
+    
 },
 
 btnalycee:{
-    borderRadius:7
-    
+    borderRadius:7   
 }
 
 })

@@ -4,12 +4,17 @@ import { styles } from "./StyleHome";
 
 export default function Home({navigation}){
     return(
+        // view tudo, tela home
         <View style={styles.tudo}>
+            {/* Scroll da tela */}
             <ScrollView horizontal={false}>
+
                 {/* Header, topo, titulo */}
                 <View style={styles.viewtitulo}>
-                    <Image style={styles.logoalyce} source={require("../screens/img/LogoAlyce.png")}></Image>
+                    <Image style={styles.logoalyce} source={require("../screens/img/LogoAlyceV3.png")}></Image>
                 </View>
+
+
                 {/* subs titulos */}
                 <View style={styles.viewtxt1}>
                     <Text style={styles.txt1}>
@@ -19,36 +24,40 @@ export default function Home({navigation}){
                     <Text style={styles.txt2}>
                         Como podemos Ajudar?
                     </Text>
+
+
+
                 {/* Area de botoes */}
+
                 <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
                 <View style={styles.btn11}>
-                <Image style={styles.btnalycee} source={require("../screens/img/btnPadraotestev3.png")}></Image>
+                <Image style={styles.btnalycee} source={require("../screens/img/btnPrevencao.png")}></Image>
                 </View> 
                 </TouchableOpacity>
                 
                 <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
                 <View style={styles.btn11}>
-                <Image style={styles.btnalycee} source={require("../screens/img/btnPrevencaov2.png")}></Image>
+                <Image style={styles.btnalycee} source={require("../screens/img/btnPosAgressao.png")}></Image>
                 </View> 
                 </TouchableOpacity>
 
                 <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
                 <View style={styles.btn11}>
-                <Image style={styles.btnalycee} source={require("../screens/img/btnPadraotestev3.png")}></Image>
+                <Image style={styles.btnalycee} source={require("../screens/img/btnRelatos.png")}></Image>
                 </View> 
                 </TouchableOpacity>
 
 
                 <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
                 <View style={styles.btn11}>
-                <Image style={styles.btnalycee} source={require("../screens/img/btnPadraotestev3.png")}></Image>
+                <Image style={styles.btnalycee} source={require("../screens/img/btnDenunciar.png")}></Image>
                 </View> 
                 </TouchableOpacity>
-
-
-
                 </View>
-                </ScrollView>      
+                {/* Fim da área de botões  */}
+
+                </ScrollView>  
+                {/*Fim Scroll view  */}
         </View>
     )
 

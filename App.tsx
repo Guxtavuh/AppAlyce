@@ -4,6 +4,8 @@ import 'react-native-gesture-handler';
 import {createNativeStackNavigator} from "@react-navigation/native-stack"
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Login from './screens/Login';
+import Cadastro from './screens/Cadastro';
 import Home from "./screens/Home"
 import Prevencao from "./screens/Prevencao";
 
@@ -19,6 +21,8 @@ export default function App() {
   
 <NavigationContainer>
   <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
+        <Stack.Screen name="Cadastro" component={Cadastro}/>
     <Stack.Screen name="Home" component={Home} options={{headerShown:false}}/>
     <Stack.Screen name="Prevencao" component={Prevencao}/>
   </Stack.Navigator>

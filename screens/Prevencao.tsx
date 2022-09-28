@@ -70,8 +70,7 @@ export default function Prevencao(){
                 Evite se mudar para longe de sua família caso possua, isso facilita a vida do agressor e o encoraja a revelar esse lado sombrio de si, já que não tem nenhum parente por perto para te ajudar.
                 {'\n'} {'\n'}<Text style={styles.subtitucomo}>APRENDA A FALAR NÃO</Text>{'\n'} {'\n'}
                 Muitas vezes ao ouvir não o agressor se revela, fica totalmente agressivo e irredutível, discordando a todo tempo, gritando e muitas vezes agredindo ou começando com empurrões ou tapas
-                {'\n'} {'\n'} (mas lembre-se é comum ao ouvir uma opinião contraria da sua a pessoa ficar descontente, triste e coisas do tipo, porém atente-se as coisas citadas acima)
-</Text>
+                {'\n'} {'\n'} (mas lembre-se é comum ao ouvir uma opinião contraria da sua a pessoa ficar descontente, triste e coisas do tipo, porém atente-se as coisas citadas acima</Text>
 
                 
 

@@ -1,10 +1,21 @@
 import { View, Text, ScrollView, Image } from "react-native";
-
+import {AntDesign} from "@expo/vector-icons";
 import { styles } from "./StylePrevencao";
+import { TouchableOpacity } from "react-native";
 
-export default function Prevencao(){
+export default function Prevencao({navigation}){
     return(
         <View style={styles.tudo}>
+            
+
+            <TouchableOpacity onPress={()=>navigation.navigate("Home")}>
+                <View style={styles.viewvoltar}>
+                <AntDesign style={styles.iconvol} name="left" size={40} color="black"/>
+                    <Text style={styles.voltext}>Voltar</Text>
+                </View>
+             </TouchableOpacity>
+
+
             <ScrollView horizontal={false}>
                 {/* Header, topo, titulo */}
                 <View style={styles.viewtitulo}>

@@ -8,6 +8,8 @@ import Login from './screens/Login';
 import Cadastro from './screens/Cadastro';
 import Home from "./screens/Home"
 import Prevencao from "./screens/Prevencao";
+import PosAgressao from "./screens/PosAgressao";
+import Relatos from "./screens/Relatos";
 import {
   useFonts,
   Jost_400Regular,
@@ -34,10 +36,13 @@ export default function App() {
   
 <NavigationContainer>
   <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
-        <Stack.Screen name="Cadastro" component={Cadastro}/>
+    <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
+    <Stack.Screen name="Cadastro" component={Cadastro}/>
     <Stack.Screen name="Home" component={Home} options={{headerShown:false}}/>
-    <Stack.Screen name="Prevencao" component={Prevencao}/>
+    <Stack.Screen name="Prevencao" component={Prevencao} options={{headerShown:false}}/>
+    <Stack.Screen name="PosAgressao" component={PosAgressao}options={{headerShown:false}} />
+    <Stack.Screen name="Relatos" component={Relatos}options={{headerShown:false}} />
+
   </Stack.Navigator>
 
 </NavigationContainer>

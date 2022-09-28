@@ -11,25 +11,36 @@ export default function Login({navigation}){
         
         <View style={styles.login}>
             
-            
+            <Image style={styles.logoalyce} source={require("../screens/img/LogoAlyceV3.png")}></Image>
             
             <TextInput placeholder="Usuario" style={styles.caixa}value={usuario}onChangeText={(value)=>setUsuario(value)}/>
-            <TextInput placeholder="Senha" style={styles.caixa} secureTextEntry value={senha}onChangeText={(value)=>setSenha(value)}/>
+            <TextInput placeholder="Senha" style={styles.caixa2} secureTextEntry value={senha}onChangeText={(value)=>setSenha(value)}/>
+
+
+
             {/* Botão logar */}
             <TouchableOpacity onPress={()=>{
                 // efetuarLogin(usuario,senha);
                 navigation.navigate("Home");
                 setUsuario("");
                 setSenha("");
-            }} style={styles.btnlogin}>
-                <AntDesign name="login" size={20} color="white"/>
-                <Text style={{color:"white"}}> Acessar</Text>
+            }}>
+                 <Image style={styles.btn} source={require("../screens/img/btnAcessar.png")}></Image>
            </TouchableOpacity> 
-            {/* Cadastrar */}
 
-            <TouchableOpacity onPress={()=>navigation.navigate("Cadastro")} style={styles.btncadastro}>
-                <AntDesign name="save" size={20} color="white"/>
-                <Text style={{color:"white"}}> Cadastrar</Text>
+
+            {/* Cadastrar */}
+            <TouchableOpacity onPress={()=>navigation.navigate("Cadastro")} style={styles}>
+            <Image style={styles.btn2} source={require("../screens/img/btnCadastrar.png")}></Image>
+            </TouchableOpacity>
+
+
+            <TouchableOpacity onPress={()=>{
+                // efetuarLogin(usuario,senha);
+                navigation.navigate("Home");
+            }}>
+
+                <Text style={styles.ent} >Entrar sem Login</Text>
             </TouchableOpacity>
         </View>
         

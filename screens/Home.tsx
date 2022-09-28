@@ -36,13 +36,13 @@ export default function Home({navigation}){
                 </View> 
                 </TouchableOpacity>
                 
-                <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
+                <TouchableOpacity onPress={()=>navigation.navigate("PosAgressao")} >
                 <View style={styles.btn11}>
                 <Image style={styles.btnalycee} source={require("../screens/img/btnPosAgressao.png")}></Image>
                 </View> 
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
+                <TouchableOpacity onPress={()=>navigation.navigate("Relatos")} >
                 <View style={styles.btn11}>
                 <Image style={styles.btnalycee} source={require("../screens/img/btnRelatos.png")}></Image>
                 </View> 

@@ -4,9 +4,21 @@ export const styles = StyleSheet.create({
     cadastro:{
         flex:1,
         justifyContent:"center",
-        alignItems:"center"
+        alignItems:"center",
+        backgroundColor:"#d2c1db"
+        
     },
     caixa:{
+        borderWidth:1,
+        borderColor:"silver",
+        width:300,
+        marginBottom:10,
+        padding:10,
+        backgroundColor:"white",
+        borderRadius:10
+    },
+
+    caixa2:{
         borderWidth:1,
         borderColor:"silver",
         width:300,
@@ -23,10 +35,20 @@ export const styles = StyleSheet.create({
         alignItems:"center",
         backgroundColor:"#c90202",
         padding:10,
-        borderRadius:10
-        
+        borderRadius:10,
+    },
 
-    }
+    btn2:{
+        margin:10,
+        width:300,
+        height: 71,
+    },
+    logoalyce:{
+        marginTop:0,
+        marginBottom:40,
+        height:110,
+        width:155
+    },
     
 
 

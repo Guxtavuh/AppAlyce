@@ -1,5 +1,5 @@
 import { AntDesign } from "@expo/vector-icons";
-import { View, TextInput, TouchableOpacity, Text, Alert, ImageBackground } from "react-native";
+import { Image,View, TextInput, TouchableOpacity, Text, Alert, ImageBackground } from "react-native";
 import { styles } from "./StylesCadastro"
 
 import { useState } from "react";
@@ -18,6 +18,10 @@ export default function Cadastro() {
     return (
         
         <View style={styles.cadastro}>
+
+        <Image style={styles.logoalyce} source={require("../screens/img/LogoAlyceV3.png")}></Image>
+
+
 
             <TextInput
                 placeholder="Usuário"
@@ -64,11 +68,13 @@ export default function Cadastro() {
 
             <TouchableOpacity onPress={() =>{
                 efetuarCadastro(usuario,senha,nomeCompleto,cpf,email,endereco)
-            }} style={styles.btncadastro}>
-                <AntDesign name="save" size={20} color="white" />
-                <Text style={{color:"white"}}>Cadastrar</Text>
+            }}>
+                <Image style={styles.btn2} source={require("../screens/img/btnCadastrar.png")}></Image>
             </TouchableOpacity>
         </View>
+
+
+            
        
     )
 }

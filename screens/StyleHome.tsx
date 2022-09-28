@@ -1,6 +1,7 @@
 import { StyleSheet, View } from "react-native";
 
 
+
 export const styles = StyleSheet.create({
 
 tudo:{
@@ -27,15 +28,17 @@ viewtxt1:{
 },
 
 txt1:{
+ fontFamily:"Jost_700Bold",
  fontSize:24,
  marginBottom:6,
- color:"black"
+ color:"black",
 },
 
 txt2:{
+    fontFamily: "Jost_400Regular",
     marginTop:20,
     color:"#black",
-    fontSize:20,
+    fontSize:28,
     marginBottom:10
 },
 btn1:{

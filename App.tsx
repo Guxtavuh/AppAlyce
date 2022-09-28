@@ -8,6 +8,13 @@ import Login from './screens/Login';
 import Cadastro from './screens/Cadastro';
 import Home from "./screens/Home"
 import Prevencao from "./screens/Prevencao";
+import {
+  useFonts,
+  Jost_400Regular,
+  Jost_700Bold,
+  
+} from '@expo-google-fonts/jost'
+import AppLoading from "expo-app-loading";
 
 
 
@@ -17,6 +24,12 @@ import Prevencao from "./screens/Prevencao";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+  const[fontsLoaded] = useFonts({
+    Jost_400Regular,
+    Jost_700Bold
+})
+
+
   return (
   
 <NavigationContainer>

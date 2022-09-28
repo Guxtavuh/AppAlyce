@@ -2,6 +2,7 @@ import { View, Text, ScrollView, Image } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { styles } from "./StyleHome";
 
+
 export default function Home({navigation}){
     return(
         // view tudo, tela home

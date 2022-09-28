@@ -52,6 +52,13 @@ p1:{
 list:{
     margin:20,
     fontSize:20
+},
+subtitucomo:{
+    fontSize:25,
+    color:"darkred",
+    fontStyle:"italic",
+    margin: 10,
+    textAlign:"left"
 }
 
 

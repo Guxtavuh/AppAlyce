@@ -25,28 +25,7 @@ export const styles = StyleSheet.create({
         backgroundColor:"white",
         borderRadius:10,
     },
-    btnlogin:{
-        flexDirection:"row",
-        marginTop:20,
-        width:200,
-        justifyContent:"center",
-        alignItems:"center",
-        backgroundColor:"#451f00",
-        marginBottom:20,
-        padding:10,
-        borderRadius:10
-    },
-    btncadastro:{
-        flexDirection:"row",
-        width:200,
-        justifyContent:"center",
-        alignItems:"center",
-        backgroundColor:"#c90202",
-        padding:10,
-        borderRadius:10
-        
 
-    },
     btn:{
         margin:10,
         width:300,

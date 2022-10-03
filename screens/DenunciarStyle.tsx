@@ -3,7 +3,6 @@ import { StyleSheet, View } from "react-native";
 
 
 export const styles = StyleSheet.create({
-
     tudo:{
         height:"100%",
         backgroundColor: "#d2c1db"
@@ -39,20 +38,21 @@ logoalyce:{
 width:140,
 height:98
 },
-
-pairelato:{
-  display:"flex",
-  flexDirection:"row"  
+txt1:{
+    margin:30,
+    textAlign:"center",
+    fontFamily:"Jost_700Bold",
+    color:"darkred",
+    fontSize:30
 },
-viewrelato:{
-margin:10,
-width:300,
-height:400,
-marginTop:20,
-backgroundColor:"#894a78",
-borderRadius:30
+txt2:{
+    margin:5,
+    textAlign:"center",
+    fontFamily:"Jost_400Regular",
+    color:"darkred",
+    fontSize:30,
+    marginBottom:20
 },
-
 relato:{
     color:"white",
     fontFamily:"Jost_400Regular",
@@ -108,5 +108,6 @@ btnenviar:{
     fontFamily:"Jost_400Regular"
 
 }
+
 
 })

@@ -10,6 +10,7 @@ import Home from "./screens/Home"
 import Prevencao from "./screens/Prevencao";
 import PosAgressao from "./screens/PosAgressao";
 import Relatos from "./screens/Relatos";
+import Denunciar from "./screens/Denunciar";
 import {
   useFonts,
   Jost_400Regular,
@@ -42,6 +43,7 @@ export default function App() {
     <Stack.Screen name="Prevencao" component={Prevencao} options={{headerShown:false}}/>
     <Stack.Screen name="PosAgressao" component={PosAgressao}options={{headerShown:false}} />
     <Stack.Screen name="Relatos" component={Relatos}options={{headerShown:false}} />
+    <Stack.Screen name="Denunciar" component={Denunciar}options={{headerShown:false}} />
 
   </Stack.Navigator>
 

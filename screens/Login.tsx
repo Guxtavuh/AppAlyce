@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AntDesign } from "@expo/vector-icons";
+
 import { styles } from "./StylesLogin";
 import { Image, ImageBackground, Text, TextInput, TouchableOpacity, View } from "react-native";
 
@@ -30,7 +30,7 @@ export default function Login({navigation}){
 
 
             {/* Cadastrar */}
-            <TouchableOpacity onPress={()=>navigation.navigate("Cadastro")} style={styles}>
+            <TouchableOpacity onPress={()=>navigation.navigate("Cadastro")}>
             <Image style={styles.btn2} source={require("../screens/img/btnCadastrar.png")}></Image>
             </TouchableOpacity>
 

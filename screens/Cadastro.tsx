@@ -1,6 +1,7 @@
 import { AntDesign } from "@expo/vector-icons";
 import { Image,View, TextInput, TouchableOpacity, Text, Alert, ImageBackground } from "react-native";
 import { styles } from "./StylesCadastro"
+import { ipserver } from "../config/servidor";
 
 import { useState } from "react";
 
@@ -68,6 +69,7 @@ export default function Cadastro() {
 
             <TouchableOpacity onPress={() =>{
                 efetuarCadastro(usuario,senha,nomeCompleto,cpf,email,endereco)
+                return Alert.alert("Aviso","Você cadastrou com sucesso");
             }}>
                 <Image style={styles.btn2} source={require("../screens/img/btnCadastrar.png")}></Image>
             </TouchableOpacity>

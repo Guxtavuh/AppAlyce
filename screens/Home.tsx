@@ -19,7 +19,7 @@ export default function Home({navigation}){
                 {/* subs titulos */}
                 <View style={styles.viewtxt1}>
                     <Text style={styles.txt1}>
-                        Bem-vindo ao Alyce, estamos aqui para te auxiliar e ajudar!
+                        Bem-vindo ao Alyce, estamos aqui para te auxiliar!
                     </Text>
                     
                     <Text style={styles.txt2}>

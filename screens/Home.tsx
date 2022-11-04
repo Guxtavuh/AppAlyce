@@ -65,13 +65,13 @@ export default function Home({navigation}){
 
 
                 <TouchableOpacity onPress={()=> Linking.openURL("tel://180")}>
-                    <Text>180</Text>
+                <Image style={styles.btnalycee1} source={require("../screens/img/btn180b.png")}></Image>
                 </TouchableOpacity>
 
-
+{/* 
                 <TouchableOpacity onPress={()=> Linking.openURL("https://api.whatsapp.com/send?phone=556196565008&text=Ol%C3%A1%20teste%20alyce")}>
                     <Text>ZIPZAP</Text>
-                </TouchableOpacity> 
+                </TouchableOpacity>  */}
 
                 </View>
                 </ScrollView>  

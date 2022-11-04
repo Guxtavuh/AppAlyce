@@ -87,13 +87,14 @@ relausers:{
     marginBottom:20
 
 },
-relau:{
+relau:{  
+    textAlignVertical:"top",  
     backgroundColor:"white",
-    textAlign:"center",
+    padding:10,
     margin:10,
     borderRadius:10,
     width:350,
-    height:150,
+    height:250,
 },
 
 btnenviar:{

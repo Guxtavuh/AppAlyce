@@ -13,6 +13,7 @@ export default function Cadastro() {
     const [cpf, setCPF] = useState("");
     const [email, setEmail] = useState("");
     const [endereco, setEndereco] = useState("");
+    const [nome, setNome] = useState("");
 
 
 
@@ -42,14 +43,15 @@ export default function Cadastro() {
             <TextInput
                 placeholder="Nome Completo"
                 style={styles.caixa}
-                value={nomeCompleto}
-                onChangeText={(value) => setNomeCompleto(value)}
+                value={nome}
+                onChangeText={(value) => setNome(value)}
             />
             <TextInput
                 placeholder="CPF"
                 style={styles.caixa}
                 keyboardType="number-pad"
                 value={cpf}
+                maxLength={15}
                 onChangeText={(value) => setCPF(value)}
             />
             <TextInput
@@ -68,6 +70,15 @@ export default function Cadastro() {
             
 
             <TouchableOpacity onPress={() =>{
+                    if(usuario.trim()=="" ||
+                    senha.trim()=="" || 
+                    nome.trim() == "" || 
+                    cpf.trim() =="" ||
+                    email.trim() == "" ||
+                    endereco.trim()=="") {
+                        return Alert.alert("Você deve preencher todos os campos");
+                    }
+
                 efetuarCadastro(usuario,senha,nomeCompleto,cpf,email,endereco)
                 return Alert.alert("Aviso","Você cadastrou com sucesso");
             }}>
@@ -84,14 +95,7 @@ export default function Cadastro() {
 
 function efetuarCadastro(usuario:any,senha:any,nome:any, cpf:any, email:any,endereco:any){
     
-    if(usuario=="" ||
-    senha=="" || 
-    nome == "" || 
-    cpf =="" ||
-    email == "" ||
-    endereco=="") {
-        return Alert.alert("Você deve preencher todos os campos");
-    }
+
     fetch(`${ipserver}/usuarios/cadastro`,{
         method:"POST",
         headers:{

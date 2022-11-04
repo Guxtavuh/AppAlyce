@@ -1,7 +1,7 @@
-import { View, Text, ScrollView, Image } from "react-native";
+import { View, Text, ScrollView, Image, Linking } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { styles } from "./StyleHome";
-
+import { useState } from "react"
 
 export default function Home({navigation}){
     return(
@@ -57,6 +57,23 @@ export default function Home({navigation}){
                 </View>
                 {/* Fim da área de botões  */}
 
+                
+                <View style={styles.discagemarea} >
+                <TouchableOpacity onPress={()=> Linking.openURL("tel://190")}>
+                <Image style={styles.btnalycee1} source={require("../screens/img/btn190c.png")}></Image>
+                </TouchableOpacity>
+
+
+                <TouchableOpacity onPress={()=> Linking.openURL("tel://180")}>
+                    <Text>180</Text>
+                </TouchableOpacity>
+
+
+                <TouchableOpacity onPress={()=> Linking.openURL("https://api.whatsapp.com/send?phone=556196565008&text=Ol%C3%A1%20teste%20alyce")}>
+                    <Text>ZIPZAP</Text>
+                </TouchableOpacity> 
+
+                </View>
                 </ScrollView>  
                 {/*Fim Scroll view  */}
         </View>

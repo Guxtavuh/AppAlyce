@@ -56,7 +56,21 @@ btn11:{
 },
 
 btnalycee:{
-    borderRadius:7   
+    borderRadius:10
+},
+btnalycee1:{
+    borderRadius:7
+},
+
+discagemarea:{
+    marginTop: -5,
+    marginLeft:10,
+    marginRight:10,
+    display:"flex",
+    flexDirection:"row",
+    justifyContent:"space-between",
+    alignItems:"center"
+
 }
 
 })

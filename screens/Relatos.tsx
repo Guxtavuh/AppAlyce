@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { ipserver } from "../config/servidor";
 import { Button, TextInput, TouchableOpacity } from "react-native";
 import {AntDesign} from "@expo/vector-icons";
 import { Alert,View, Text, ScrollView, Image } from "react-native";
@@ -5,6 +7,7 @@ import { Alert,View, Text, ScrollView, Image } from "react-native";
 import { styles } from "./StyleRelatos";
 
 export default function Relatos({navigation}){
+    const [relato,setRelato] = useState("");
     return(
         <View style={styles.tudo}>
             {/* {(Alert.alert("Aviso","É necessario possuir conta para realizar um relato, caso faça sem o mesmo será descartado"))}  */}
@@ -65,17 +68,44 @@ export default function Relatos({navigation}){
                     </Text>
                     {/* Area de formulario */}
                     <View style={styles.userco}>
-                    <TextInput placeholder="Usuario" style={styles.relausers}/>
-                    <TextInput placeholder="Seu relato" style={styles.relau}/>
+
+                    <TextInput value={relato} placeholder="Seu relato" style={styles.relau} onChangeText={(value)=>setRelato(value)} multiline={true} />
                     </View>
 
-                    <TouchableOpacity style={{display:"flex", justifyContent:"center", alignItems:"center"}} >
+                    <TouchableOpacity style={{display:"flex", justifyContent:"center", alignItems:"center"}}onPress={()=>{
+                                                    if(relato.trim()=="" ){
+                                                        return Alert.alert("Erro","Você deve preencher o relato");
+                                                    }
+                                                    relatar(relato)
+                                                    return Alert.alert("Aviso","Você fez seu relato com sucesso");
+                                                    }}>
                             <Text style={styles.btnenviar}  > Enviar</Text>
-                    </TouchableOpacity>
-                
-                </View>
-                
 
+                    </TouchableOpacity>
+                </View>
         </ScrollView>
         </View>
     )}
+
+    async function relatar(relato:any){
+        let result = "";
+          await fetch(`${ipserver}/relato/relato`,{
+              method:"POST",
+              headers:{
+                  accept:"application/json",
+                  "content-type":"application/json"
+              },
+              body:JSON.stringify({
+                 relato:relato
+              })
+      
+          })
+          .then((response)=>response.json())
+          .then((rs)=>{
+              console.log(rs);
+              
+              result = rs.output;
+          })
+          .catch((erro)=>console.error(`Erro na api -> ${erro}`));
+          return result;
+      }

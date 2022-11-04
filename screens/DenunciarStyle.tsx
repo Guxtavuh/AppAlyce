@@ -88,8 +88,8 @@ relausers:{
 
 },
 relau:{
+    textAlignVertical:"top",  
     backgroundColor:"white",
-    textAlign:"center",
     margin:10,
     borderRadius:10,
     width:350,

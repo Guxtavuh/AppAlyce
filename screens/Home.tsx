@@ -29,6 +29,7 @@ export default function Home({navigation}){
 
 
                 {/* Area de botoes */}
+                <View style={styles.areadosbtn}>
 
                 <TouchableOpacity onPress={()=>navigation.navigate("Prevencao")} >
                 <View style={styles.btn11}>
@@ -55,6 +56,8 @@ export default function Home({navigation}){
                 </View> 
                 </TouchableOpacity>
                 </View>
+
+                </View>
                 {/* Fim da área de botões  */}
 
                 
@@ -68,12 +71,15 @@ export default function Home({navigation}){
                 <Image style={styles.btnalycee1} source={require("../screens/img/btn180b.png")}></Image>
                 </TouchableOpacity>
 
-{/* 
-                <TouchableOpacity onPress={()=> Linking.openURL("https://api.whatsapp.com/send?phone=556196565008&text=Ol%C3%A1%20teste%20alyce")}>
-                    <Text>ZIPZAP</Text>
-                </TouchableOpacity>  */}
+
 
                 </View>
+                <View style={{justifyContent:"center", alignItems:"center",}}>
+                <TouchableOpacity onPress={()=> Linking.openURL("https://api.whatsapp.com/send?phone=556196565008&text=Ol%C3%A1%20teste%20alyce")}>
+                <Image style={styles.btnalycee11} source={require("../screens/img/btnzap3.png")}></Image>
+                </TouchableOpacity>  
+                </View>
+        
                 </ScrollView>  
                 {/*Fim Scroll view  */}
         </View>

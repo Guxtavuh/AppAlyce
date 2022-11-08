@@ -90,10 +90,11 @@ relausers:{
 relau:{
     textAlignVertical:"top",  
     backgroundColor:"white",
+    padding:10,
     margin:10,
     borderRadius:10,
     width:350,
-    height:150,
+    height:250,
 },
 
 btnenviar:{

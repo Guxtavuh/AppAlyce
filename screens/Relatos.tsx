@@ -20,7 +20,7 @@ export default function Relatos({navigation}){
                 </TouchableOpacity>
 
                 
-         <ScrollView horizontal={false}>
+         
                 {/* Header, topo, titulo */}
                 <View style={styles.viewtitulo}>
                     <Image style={styles.logoalyce} source={require("../screens/img/LogoAlyceV3.png")}></Image>
@@ -32,26 +32,32 @@ export default function Relatos({navigation}){
                     
                     {/* View para cada relato */}
                         <View style={styles.viewrelato}>
-                            <ScrollView horizontal={false}>
-                                <Text style={styles.relato}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt cum quo deserunt, consectetur omnis aut sequi ut tempore velit magni iste non corporis recusandae unde, laborum sapiente itaque. Deleniti.</Text>
-                            </ScrollView>
+                                
+                                <ScrollView >
+                                
+                                <Text style={styles.relato}>“Ele era tranquilo, educado e calmo. Só depois fui saber que já tinha sido agressivo com ex-namoradas”, conta a designer sobre seu agressor, com quem teve um relacionamento de três meses. “Em maio de 2020, descobri que estava grávida, ele não aceitou e veio com uma arma de fogo para cima de mim, para que eu tirasse o bebê”, diz Thamires, que via Lei Maria da Penha, entrou em setembro do mesmo ano para o Programa Prevenção à Violência Doméstica. Entre outras diligências, isso estabeleceu uma primeira medida protetiva determinando que o agressor precisava ficar no mínimo a 300 metros de distância dela.”</Text>
+                                </ScrollView>   
+                        
+                        
                         </View>
                     {/* View para cada relato */}
                     <View style={styles.viewrelato}>
                             <ScrollView horizontal={false}>
-                                <Text style={styles.relato}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt cum quo deserunt, consectetur omnis aut sequi ut tempore velit magni iste non corporis recusandae unde, laborum sapiente itaque. Deleniti.</Text>
+                                <Text style={styles.relato}>“Era pra eu estar morta”, desabafa a designer juiz-forana Thamires Guedes Rabello, 27, ao telefone. “Mesmo depois da medida protetiva, eu registrei sete boletins de ocorrência contra ele, o último tem duas semanas”, completa ela, uma das mulheres vítimas de violência doméstica registradas em 2020 em Juiz de Fora segundo dados da Delegacia Especializada no Atendimento à Mulher (Deam). De janeiro a julho de 2020, o órgão solicitou 659 medidas protetivas contra agressores de mulheres. No mesmo período deste ano, foram 531.</Text>
                             </ScrollView>
                     </View>
                     {/* View para cada relato */}
                     <View style={styles.viewrelato}>
                             <ScrollView horizontal={false}>
-                                <Text style={styles.relato}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt cum quo deserunt, consectetur omnis aut sequi ut tempore velit magni iste non corporis recusandae unde, laborum sapiente itaque. Deleniti.</Text>
+                                <Text style={styles.relato}>“Por várias vezes tentei me separar, mas aí a perseguição era tanta, e não atingia só a mim, era meu trabalho, minha família… Diante das perseguições eu acabava voltando, até que depois de 11 anos encontrei forças em Deus pra criar coragem e sair daquela situação, Por fim, ela deixou um alerta para as mulheres que vivem em um relacionamento abusivo: “Mulheres, não se calem. Não tenham medo. Se o medo for da morte, entendam que vocês que vivem uma situação destas dentro de casa estão com a alma morta em um corpo que apenas existe, não vive.”
+
+Jackeline registrou um boletim de ocorrência sobre a agressão. Após passar pela Unidade de Pronto Atendimento de Araçariguama ela aguarda vaga para fazer uma cirurgia no Centro Hospitalar de Sorocaba (CHS).”</Text>
                             </ScrollView>
                     </View>
                     {/* View para cada relato */}
                     <View style={styles.viewrelato}>
                             <ScrollView horizontal={false}>
-                                <Text style={styles.relato}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt cum quo deserunt, consectetur omnis aut sequi ut tempore velit magni iste non corporis recusandae unde, laborum sapiente itaque. Deleniti.</Text>
+                                <Text style={styles.relato}>" A gente ficava sem comida, sem água e apanhando... Meus filhos, também amarrados, apanhavam de fios e ele enforcava a gente também", relatou Edna, 40, sobre os maus-tratos sofridos durante os 17 anos em que foi mantida com os dois filhos em cárcere privado numa casa insalubre no bairro Guaratiba, na zona oeste do Rio de Janeiro.”</Text>
                             </ScrollView>
                     </View>
                     {/* View para cada relato */}
@@ -62,6 +68,7 @@ export default function Relatos({navigation}){
                     </View>
                     </ScrollView>               
                 </View>
+                <ScrollView horizontal={false}>
                 <View style={styles.relatararea}>
                     <Text style={styles.titure}>
                             Você gostaria de contar{'\n'} sua experiencia e fazer seu relato?

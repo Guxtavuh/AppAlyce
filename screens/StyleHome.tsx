@@ -6,7 +6,8 @@ export const styles = StyleSheet.create({
 
 tudo:{
     height:"100%",
-    backgroundColor: "#d2c1db"
+    backgroundColor: "#d2c1db",
+    
 },
 
 viewtitulo:{
@@ -52,14 +53,20 @@ btn11:{
     justifyContent:"center",
     alignItems:"center",
     marginTop:10,
+    width:"100%"
     
 },
 
 btnalycee:{
-    borderRadius:10
+    borderRadius:10,
+    
+    
 },
 btnalycee1:{
     borderRadius:7
+},
+btnalycee11:{
+    marginLeft:-100
 },
 
 discagemarea:{
@@ -71,6 +78,6 @@ discagemarea:{
     justifyContent:"space-between",
     alignItems:"center"
 
-}
+},
 
 })

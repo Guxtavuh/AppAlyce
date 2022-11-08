@@ -47,7 +47,7 @@ pairelato:{
 viewrelato:{
 margin:10,
 width:300,
-height:400,
+height:300,
 marginTop:20,
 backgroundColor:"#894a78",
 borderRadius:30
@@ -94,7 +94,7 @@ relau:{
     margin:10,
     borderRadius:10,
     width:350,
-    height:250,
+    height:170,
 },
 
 btnenviar:{

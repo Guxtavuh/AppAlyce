@@ -62,6 +62,13 @@ subtitu:{
     fontFamily:"Jost_700Bold",
     fontSize:25,
 },
+subtitu1:{
+    textAlign:"center",
+    fontFamily:"Jost_700Bold",
+    fontSize:25,
+    marginTop:15,
+    marginBottom:10
+},
 p:{  
     fontFamily:"Jost_400Regular",
     fontSize:20,

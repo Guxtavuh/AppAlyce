@@ -16,6 +16,8 @@ justifyContent:"center",
 alignItems:"center",
 borderRadius:40,    
 marginTop:50, 
+width:"100%",
+height:"15%"
 
 
 },
@@ -26,6 +28,12 @@ height:98
 
 viewtxt1:{
     margin:20,
+    width:"90%",
+    height:"15%"
+},
+areadosbtn:{
+    width:"100%",
+    height:"40%"
 },
 
 txt1:{
@@ -49,35 +57,62 @@ marginTop:10
 },
 
 btn11:{
-    display:"flex",
+
     justifyContent:"center",
     alignItems:"center",
-    marginTop:10,
-    width:"100%"
+    width:"100%",
+    height:90
+    
     
 },
 
 btnalycee:{
+    marginTop:25,
     borderRadius:10,
+    width:"95%",
+    height:"90%"
+    
+    
     
     
 },
 btnalycee1:{
-    borderRadius:7
-},
-btnalycee11:{
-    marginLeft:-100
+    borderRadius:7,
+    width:170,
+    height:75,
+    margin: 3
+    
 },
 
 discagemarea:{
-    marginTop: -10,
-    marginLeft:10,
-    marginRight:10,
+    marginTop:"10%",
     display:"flex",
     flexDirection:"row",
-    justifyContent:"space-between",
-    alignItems:"center"
+    justifyContent:"center",
+    alignItems:"center",
+    height:"5%",
+    width:"100%",
+
 
 },
+arealig:{
+    justifyContent:"center",
+    alignItems:"center",
+    flexDirection:"row",
+    width:"100%",
+    
+    
+},
+wpp:{
+    marginTop:"4%",
+    alignItems:"center",
 
+    
+},
+btnalycee11:{
+    marginLeft:-100,
+    
+
+    
+}
 })

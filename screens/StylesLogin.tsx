@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
     },
 
     btn:{
-        margin:10,
+        margin:5,
         width:300,
         height: 71
     },
@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
     },
     logoalyce:{
         marginTop:10,
-        marginBottom:100,
+        marginBottom:50,
     },
     ent:{
         fontSize:20,

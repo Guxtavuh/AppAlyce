@@ -3,16 +3,17 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     cadastro:{
         flex:1,
-        justifyContent:"center",
+        justifyContent:"space-between",
         alignItems:"center",
-        backgroundColor:"#d2c1db"
+        backgroundColor:"#d2c1db",
+        
         
     },
     caixa:{
         borderWidth:1,
         borderColor:"silver",
         width:300,
-        marginBottom:10,
+        marginBottom:5,
         padding:10,
         backgroundColor:"white",
         borderRadius:10
@@ -39,13 +40,14 @@ export const styles = StyleSheet.create({
     },
 
     btn2:{
-        margin:10,
+        margin:5,
         width:300,
         height: 71,
+        marginBottom:100
     },
     logoalyce:{
-        marginTop:0,
-        marginBottom:40,
+        marginTop:5,
+        marginBottom:10,
         height:110,
         width:155
     },

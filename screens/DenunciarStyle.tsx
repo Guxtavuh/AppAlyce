@@ -82,7 +82,7 @@ relausers:{
     backgroundColor:"white",
     textAlign:"center",
     borderRadius:10,
-    width:350,
+    width:"85%",
     height:50,
     marginBottom:20
 
@@ -93,7 +93,7 @@ relau:{
     padding:10,
     margin:10,
     borderRadius:10,
-    width:350,
+    width:"85%",
     height:250,
 },
 

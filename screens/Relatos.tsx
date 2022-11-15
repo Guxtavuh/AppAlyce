@@ -51,19 +51,13 @@ export default function Relatos({navigation}){
                             <ScrollView horizontal={false}>
                                 <Text style={styles.relato}>“Por várias vezes tentei me separar, mas aí a perseguição era tanta, e não atingia só a mim, era meu trabalho, minha família… Diante das perseguições eu acabava voltando, até que depois de 11 anos encontrei forças em Deus pra criar coragem e sair daquela situação, Por fim, ela deixou um alerta para as mulheres que vivem em um relacionamento abusivo: “Mulheres, não se calem. Não tenham medo. Se o medo for da morte, entendam que vocês que vivem uma situação destas dentro de casa estão com a alma morta em um corpo que apenas existe, não vive.”
 
-Jackeline registrou um boletim de ocorrência sobre a agressão. Após passar pela Unidade de Pronto Atendimento de Araçariguama ela aguarda vaga para fazer uma cirurgia no Centro Hospitalar de Sorocaba (CHS).”</Text>
+                                    Jackeline registrou um boletim de ocorrência sobre a agressão. Após passar pela Unidade de Pronto Atendimento de Araçariguama ela aguarda vaga para fazer uma cirurgia no Centro Hospitalar de Sorocaba (CHS).”</Text>
                             </ScrollView>
                     </View>
                     {/* View para cada relato */}
                     <View style={styles.viewrelato}>
                             <ScrollView horizontal={false}>
                                 <Text style={styles.relato}>" A gente ficava sem comida, sem água e apanhando... Meus filhos, também amarrados, apanhavam de fios e ele enforcava a gente também", relatou Edna, 40, sobre os maus-tratos sofridos durante os 17 anos em que foi mantida com os dois filhos em cárcere privado numa casa insalubre no bairro Guaratiba, na zona oeste do Rio de Janeiro.”</Text>
-                            </ScrollView>
-                    </View>
-                    {/* View para cada relato */}
-                    <View style={styles.viewrelato}>
-                            <ScrollView horizontal={false}>
-                                <Text style={styles.relato}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt cum quo deserunt, consectetur omnis aut sequi ut tempore velit magni iste non corporis recusandae unde, laborum sapiente itaque. Deleniti.</Text>
                             </ScrollView>
                     </View>
                     </ScrollView>               

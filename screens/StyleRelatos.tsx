@@ -32,22 +32,26 @@ justifyContent:"center",
 alignItems:"center",
 borderRadius:40,    
 marginTop:10, 
+height:"10%"
 
 
 },
 logoalyce:{
-width:140,
-height:98
+marginTop:-10,
+width:136,
+height:94
 },
 
 pairelato:{
+
   display:"flex",
-  flexDirection:"row"  
+  flexDirection:"row",
+  height:"27%"
 },
 viewrelato:{
 margin:10,
 width:300,
-height:300,
+height:220,
 marginTop:20,
 backgroundColor:"#894a78",
 borderRadius:30
@@ -57,10 +61,10 @@ relato:{
     color:"white",
     fontFamily:"Jost_400Regular",
     fontSize:25,
-    margin:30
+    margin:20
 },
 relatararea:{
-
+    height:"40%"
 },
 titure:{
     marginTop:30,
@@ -91,9 +95,9 @@ relau:{
     textAlignVertical:"top",  
     backgroundColor:"white",
     padding:10,
-    margin:10,
+    margin:"1%",
     borderRadius:10,
-    width:350,
+    width:"85%",
     height:170,
 },
 
